@@ -1,0 +1,35 @@
+.movies-page {
+    max-width: 575px;
+    width: 100%;
+    margin: 50px auto;
+}
+.error{
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+.show-error {
+    display: block;
+}
+
+.movie-list {
+    list-style-type: none;
+    display: none;
+}
+.movie-list__item {
+    font-size: 18px;
+}
+.movie-list__item:not(:last-child) {
+    margin-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+.movie-list__item:not(:last-child).movie-list__option:last-child {
+    margin-bottom: 10px;
+}
+.movie-list__option {
+    display: block;
+}
+.movie-list.visible {
+    display: block;
+}
+
