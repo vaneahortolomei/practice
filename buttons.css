@@ -10,9 +10,7 @@
 .button:hover {
     box-shadow: 1px 1px 7px -2px black;
 }
-/*.button:focus {*/
-/*    box-shadow: inset 0 0 6px -2px black;*/
-/*}*/
+
 .button:active {
    transform: scale(0.98);
 }
