@@ -12,9 +12,15 @@ class Product {
 class ShoppingCart {
   items = [];
 
+  get totalAmount(){
+    return this.items.reduce((a, b) => {
+      return a + b.price;
+    }, 0);
+  }
+
   addProduct(product){
     this.items.push(product);
-    this.totalOutput.innerText = `Total: \$${1}`;
+    this.totalOutput.innerText = `Total: \$${this.totalAmount.toFixed(2)}`;
   }
 
   render(){
@@ -110,6 +116,7 @@ class Shop {
   }
 }
 
+//static
 class App {
   static card;
 

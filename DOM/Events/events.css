@@ -1,0 +1,66 @@
+.test-div {
+  border: 1px solid black;
+  padding: 20px;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*align-items: center;*/
+}
+
+ul {
+  display: flex;
+}
+li + li {
+   margin-left: 15px;
+}
+li {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.color {
+  background: red;
+}
+.color a {
+  color: #fff;
+}
+
+.item-list {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-list__item {
+  border-radius: 10px;
+  flex-direction: row;
+  flex: 0 1 100%;
+  border: none;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgb(220 223 230);
+  margin-left: 0;
+  cursor: move;
+}
+
+.item-list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.dragging {
+  opacity: 0.5;
+}
+
+select {
+  margin: 50px;
+  width: 300px;
+  color: red;
+}
+select:checked {
+  color: green;
+}
+
+::selection {
+  color: red;
+  background:
+      yellow;
+}

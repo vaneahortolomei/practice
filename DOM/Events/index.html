@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  <link rel="stylesheet" type="text/css" href="../../buttons.css">
+  <link rel="stylesheet" type="text/css" href="./events.css">
+  <title>MoviesListPage</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="content">
+    <div class="container">
+      <div class="click-container">
+        <button class="button">Click</button>
+        <button class="button">Click</button>
+      </div>
+      <div class="mouse-container">
+        <button class="button">Click</button>
+        <button class="button">Click</button>
+      </div>
+      <form action="#" class="form mt-5 mb-5">
+        <div class="form__group">
+          <label for="text">Name</label>
+          <input type="text" id="text" name="text" class="form__input">
+        </div>
+        <button type="submit" class="button">Send</button>
+      </form>
+      <div class="mt-5">
+        <div class="test-div">
+          <button class="button">Click</button>
+          <button class="button">Click</button>
+        </div>
+      </div>
+      <div class="mt-5">
+        <div class="test-div">
+          <ul>
+            <li class="clickable" draggable="true">
+              <a class="clickable__button" href="#">Link1</a>
+            </li>
+            <li class="clickable" draggable="true">
+              <a class="clickable__button" href="#">Link2</a>
+            </li>
+            <li class="clickable" draggable="true">
+              <a class="clickable__button" href="#">Link3</a>
+            </li>
+            <li class="clickable" draggable="true">
+              <a class="clickable__button" href="#">Link4</a>
+            </li>
+            <li class="clickable" draggable="true">
+              <a class="clickable__button" href="#">Link5</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-5">
+        <div class="test-div">
+          <header>Active projects</header>
+          <ul class="item-list list-active">
+            <li class="item-list__item" draggable="true">
+              <p>Text1</p>
+            </li>
+            <li class="item-list__item" draggable="true">
+              <p>Text2</p>
+            </li>
+            <li class="item-list__item" draggable="true">
+              <p>Text3</p>
+            </li>
+            <li class="item-list__item" draggable="true">
+              <p>Text4</p>
+            </li>
+            <li class="item-list__item" draggable="true">
+              <p>Text5</p>
+            </li>
+          </ul>
+        </div>
+        <div class="test-div mb-5">
+          <header>Finish projects</header>
+          <ul class="item-list mt-5 list-active">
+            <li class="item-list__item" draggable="true">
+              <p>Text6</p>
+            </li>
+            <li class="item-list__item" draggable="true">
+              <p>Text7</p>
+            </li>
+          </ul>
+        </div>
+        <div class="test-div mb-5">
+          <label class="sr-only" for="select-status">Выбор статуса</label>
+          <select id="select-status"
+                  name="select-status"
+                  class="custom-select select-st"
+                  size="1"
+          >
+            <option  selected="selected">Select One …</option>
+            <option  value="approve" class="green">Одобрен</option>
+            <option  value="decline" class="red">Отменить</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./events.js"></script>
+</body>
+</html>

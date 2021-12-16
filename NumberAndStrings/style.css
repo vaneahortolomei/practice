@@ -1,0 +1,16 @@
+p {
+  margin-right: 15px;
+}
+
+option {
+  color: green;
+}
+.custom-select:hover:not(:disabled),
+.custom-select:focus:not(:disabled),
+.custom-select:active:not(:disabled){
+  color: red;
+}
+
+select option .green{
+  color: green;
+}

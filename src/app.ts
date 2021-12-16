@@ -66,7 +66,9 @@ console.log(user.name);
 
 
 
+interface UserRepo {
 
+}
 
 
 
