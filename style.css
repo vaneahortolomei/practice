@@ -43,6 +43,22 @@ ul {
 li {
     list-style-type: none;
 }
+.list {
+    margin-top: 50px;
+}
+.item-list {
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(31 51 136 / 15%);
+    padding: 20px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+.item-list:hover {
+    box-shadow: 0 15px 30px rgb(31 51 136 / 15%);
+}
+.item-list:not(:last-child){
+    margin-bottom: 20px;
+}
 
 label {
     font-size: 16px;

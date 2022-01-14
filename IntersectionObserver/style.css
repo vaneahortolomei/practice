@@ -1,0 +1,30 @@
+.list {
+  padding: 20px;
+}
+
+.item-list {
+  padding: 20px;
+  box-shadow: 0 10px 20px -5px #b3bac9;
+  border-radius: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 2s, box-shadow 0.3s;
+  /*display: none;*/
+}
+.item-list--green {
+  background: green;
+}
+.item-list--show {
+  opacity: 1;
+  display: block;
+}
+.item-list--hide {
+  display: none;
+}
+
+.item-list:not(:last-child){
+  margin-bottom: 15px;
+}
+.item-list:hover {
+  box-shadow: 0 10px 20px #b3bac9;
+}

@@ -1,15 +1,21 @@
 //Intersection Observer API
 
-const test = document.querySelector('.test');
+const items = document.querySelectorAll('.item-list');
 
-observer = new IntersectionObserver(entries => {
-  const checker = () => {
-    return entries[0].isIntersecting ?
-      entries[0].target.style.opacity = '0' : entries[0].target.style.opacity = '1'
-  };
-  setTimeout(checker, 500);
-}, {threshold: 1});
+const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        console.log(entry.rootBounds);
+        entry.target.classList.toggle('item-list--show', entry.isIntersecting);
+        if (entry.isIntersecting) observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 1,
+    }
+);
 
 
-observer.observe(test);
-
+items.forEach(item => {
+  observer.observe(item);
+});

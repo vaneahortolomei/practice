@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  <link rel="stylesheet" type="text/css" href="../../buttons.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>HttpRequest</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="content">
+    <div class="container">
+<!--      Template-->
+      <template id="post">
+        <li class="item-list">
+          <h2></h2>
+          <p></p>
+          <button class="button delete_button">Delete</button>
+        </li>
+      </template>
+
+<!--      Form-->
+      <section style="margin-bottom: 30px">
+        <form class="form">
+          <div class="form__group">
+            <label for="title">Title</label>
+            <input id="title" class="form__input"/>
+          </div>
+          <div class="form__group">
+            <label for="text">Body</label>
+            <textarea id="text" placeholder="text" rows="10" class="form__textarea"></textarea>
+          </div>
+          <button class="button">Send</button>
+        </form>
+      </section>
+
+
+      <section id="body">
+        <button class="btn_click button">xhr posts</button>
+        <button class="btn_click_fetch button">Fetch posts</button>
+        <button class="btn_click_reload button">Reload</button>
+        <ul class="list"></ul>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>

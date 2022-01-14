@@ -12,3 +12,4 @@ console.log(arr);
 //from min to max
 arr.sort((a, b) => a - b);
 console.log(arr);
+
