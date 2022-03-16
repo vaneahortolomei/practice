@@ -1,3 +1,17 @@
+//Базовый синтаксис для класса!
+// class MyClass {
+//   prop = value; // свойство
+//   constructor(...) { // конструктор
+//     // ...
+//   }
+//   method(...) {} // метод
+//   get something(...) {} // геттер
+//   set something(...) {} // сеттер
+//   [Symbol.iterator]() {} // метод с вычисляемым именем (здесь - символом)
+//   // ...
+// }
+
+
 //product object
 class Product {
   constructor(img, name, id, desc, price) {

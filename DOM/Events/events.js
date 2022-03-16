@@ -48,6 +48,10 @@ buttons2.forEach(btn => {
 const form = document.querySelector('.form');
 const input = form.querySelector('.form__input');
 
+input.addEventListener('change', function(){
+  console.log(input.value);
+});
+
 const submit = (form, input) => { //function factory!!! events example
   return {
     empty(){
@@ -56,6 +60,7 @@ const submit = (form, input) => { //function factory!!! events example
     },
     checker(){
       //check one field
+      console.log(input.value);
       return input.value === '' ? alert('Attention! fill the fields') : this.empty();
     },
     submitForm(){

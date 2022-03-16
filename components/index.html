@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../buttons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MoviesListPage</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <div class="container">
+            <div class="offer-wrapper offer-wrapper--top">
+                <uc-tooltip>JoyMoney</uc-tooltip>
+            </div>
+            <div class="offer-wrapper offer-wrapper--top">
+                <uc-tooltip text="Выдают кредиты только гражданам америки!">Money Man</uc-tooltip>
+            </div>
+            <div class="offer-wrapper offer-wrapper--top">
+                <uc-tooltip text="Ничего не выдают!">MaxCredit</uc-tooltip>
+            </div>
+
+            <div class="main"></div>
+
+            <span class="link-line">Go to <a is="uc-link" href="https://credithub.ru/">CreditHub</a></span>
+
+            <uc-greetings></uc-greetings>
+            <uc-greetings name="Andy"></uc-greetings>
+            <user-card>
+                <span slot="username">John</span>
+                <span slot="age">22</span>
+                <div>More info soon...</div>
+            </user-card>
+        </div>
+    </div>
+
+    <template id="box">
+        <div class="block">
+            <h2 class="box__title"></h2>
+            <p class="box__subtitle"></p>
+        </div>
+    </template>
+</div>
+<script src="main.js"></script>
+<script src="confirm-link.js"></script>
+<script src="shadow.js"></script>
+<script src="slot.js"></script>
+</body>
+</html>

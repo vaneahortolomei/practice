@@ -1,0 +1,47 @@
+.graph {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 200px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-left: 5px;
+  margin-top: 20px;
+}
+
+.graph__inner {
+  position: absolute;
+  bottom: 0;
+}
+
+.graph__line {
+  display: inline-block;
+  position: relative;
+  min-height: 10px;
+  width: 20px;
+  background-color: red;
+  margin-right: 5px;
+  transition: min-height 0.2s;
+}
+
+.graph__line:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 3px 1px red;
+  transition: box-shadow 0.2s;
+}
+
+.graph__line::before,
+.graph__line::after {
+  position: absolute;
+  top: -50px;
+}
+.graph__line:hover::before{
+  content: attr(data-tooltip);
+  color: #000;
+  border: 1px solid black;
+  width: max-content;
+  padding: 5px;
+  z-index: 100;
+  background-color: #fff;
+}
+
